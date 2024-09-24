@@ -1,0 +1,21 @@
+<nav mat-tab-nav-bar>
+      
+      
+        <a mat-list-item routerLinkActive="activebutton" [routerLinkActiveOptions]="{exact:true}">
+          Home
+        </a>
+        <a  mat-list-item  (click)="openUsersList()" routerLinkActive="activebutton" [routerLinkActiveOptions]="{exact:true}">
+          Users List
+        </a>
+        <a  mat-list-item  (click)="openUsersDetails()" routerLinkActive="activebutton" [routerLinkActiveOptions]="{exact:true}">
+          Users Details
+        </a>
+        <a  mat-list-item (click)="followerDetails()" routerLinkActive="activebutton" [routerLinkActiveOptions]="{exact:true}">
+          Followers
+        </a>
+
+</nav>
+<router-outlet></router-outlet>
+
+
+  

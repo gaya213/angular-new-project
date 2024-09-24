@@ -1,0 +1,26 @@
+
+<section>
+  <div class="main-title">
+    <h1  class="heading">User List</h1>
+</div>
+<div>
+  <table class="table" frame="box" rules="group">
+      <th> <b>Id</b></th>
+      <th> <b>Login</b></th>
+      <th> <b>Type</b></th>
+      <th> <b>Node Id</b></th>
+      <th> <b>Url</b></th>
+      <tbody>
+        <tr *ngFor="let item of getdata">
+          <td>{{item?.id}}</td>
+          <td>{{item?.login}}</td>
+          <td>{{item?.type}}</td>
+          <td>{{item?.node_id}}</td>
+          <td>{{item?.url}}</td>
+
+        </tr>
+      </tbody>
+      <!-- <td mat-cell *matCellDef="let element ;let i=index">{{(i+1) + (paginator.pageIndex * paginator.pageSize) }}</td> -->
+  </table>
+</div>
+</section>
