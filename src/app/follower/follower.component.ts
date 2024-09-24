@@ -8,6 +8,6 @@ import { Chart, ChartData } from 'chart.js'
   styleUrls: ['./follower.component.scss']
 })
 export class FollowerComponent {
-  type = 'bar';
+  type = 'follower';
   
 }
